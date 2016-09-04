@@ -1,0 +1,120 @@
+body {
+  padding: 0;
+  width: 10000px;
+  min-height: 500px;
+  height: 100vh;
+  margin: 0;
+  overflow-y: hidden;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.landing-container {
+  float: left;
+  background-image: url("Assets/Images/Asset4.png");
+  background-size: cover;
+  background-repeat: none;
+  width: 85vw;
+  min-width: 1000px;
+  height: 100vh;
+  min-height: 500px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.landing-container img.logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 670px;
+  -webkit-animation: flowing 20s linear infinite;
+          animation: flowing 20s linear infinite;
+}
+
+.landing-container img.plant {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 200px;
+  -webkit-animation: flowing 10s linear infinite reverse;
+          animation: flowing 10s linear infinite reverse;
+}
+
+.landing-container img.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  -webkit-animation: flowing 10s linear infinite;
+          animation: flowing 10s linear infinite;
+}
+
+@-webkit-keyframes flowing {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes flowing {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.sidebar-about {
+  background-color: #2c2c2c;
+  width: 15vw;
+  min-width: 200px;
+  float: left;
+  height: 100vh;
+  position: relative;
+}
+
+.sidebar-about p {
+  color: white;
+  font-family: "Cubic", "Minecraftia", monospace, san-serif;
+  text-align: center;
+  width: 100%;
+  line-height: 3em;
+  letter-spacing: 1.5px;
+  position: absolute;
+}
+
+.sidebar-about p.intro {
+  top: 30px;
+}
+
+.sidebar-about p.intro span {
+  font-size: 3em;
+}
+
+.sidebar-about p.work-text {
+  bottom: 30px;
+}
