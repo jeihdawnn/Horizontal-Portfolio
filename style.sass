@@ -4,7 +4,6 @@ body
     min-height: 500px
     height: 100vh
     margin: 0
-    overflow-y:hidden
 *
     margin: 0
     box-sizing: border-box
@@ -60,6 +59,7 @@ a
     min-width: 200px
     float: left
     height: 100vh
+    min-height: 500px
     position: relative
     
     p
@@ -78,4 +78,40 @@ a
         &.work-text
             bottom: 30px
         
+
+//PORTFOLIO SECTION
+.work-container
+    width: 100vw
+    min-width: 1000px
+    height: 100vh
+    min-height: 500px
+    float: left
+    overflow-y: hidden
     
+    div
+        width: 20%
+        float: left
+            
+        
+        img
+            width: 100%
+            position: relative
+    .work1,.work3,.work5
+        img
+            animation: upanddown 5s linear infinite
+    .work2,.work4
+        img
+            animation: uad-reverse 10s linear infinite
+            
+@keyframes upanddown
+    0%, 100%
+        top: 0
+    50%
+        top: -500px
+    @keyframes upanddown
+@keyframes uad-reverse
+    
+    0%, 100%
+        bottom: 0
+    50%
+        bottom: 500px

@@ -4,7 +4,6 @@ body {
   min-height: 500px;
   height: 100vh;
   margin: 0;
-  overflow-y: hidden;
 }
 
 * {
@@ -94,6 +93,7 @@ a {
   min-width: 200px;
   float: left;
   height: 100vh;
+  min-height: 500px;
   position: relative;
 }
 
@@ -117,4 +117,72 @@ a {
 
 .sidebar-about p.work-text {
   bottom: 30px;
+}
+
+.work-container {
+  width: 100vw;
+  min-width: 1000px;
+  height: 100vh;
+  min-height: 500px;
+  float: left;
+  overflow-y: hidden;
+}
+
+.work-container div {
+  width: 20%;
+  float: left;
+}
+
+.work-container div img {
+  width: 100%;
+  position: relative;
+}
+
+.work-container .work1 img, .work-container .work3 img, .work-container .work5 img {
+  -webkit-animation: upanddown 5s linear infinite;
+          animation: upanddown 5s linear infinite;
+}
+
+.work-container .work2 img, .work-container .work4 img {
+  -webkit-animation: uad-reverse 10s linear infinite;
+          animation: uad-reverse 10s linear infinite;
+}
+
+@-webkit-keyframes upanddown {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: -500px;
+  }
+  @keyframes upanddown {}
+}
+
+@keyframes upanddown {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: -500px;
+  }
+  @-webkit-keyframes upanddown {}
+  @keyframes upanddown {}
+}
+
+@-webkit-keyframes uad-reverse {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 500px;
+  }
+}
+
+@keyframes uad-reverse {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 500px;
+  }
 }
